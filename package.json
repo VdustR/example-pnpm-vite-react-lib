@@ -1,0 +1,12 @@
+{
+  "name": "example-pnpm-vite-react-lib",
+  "description": "A React Library Repository Example with pnpm and vite",
+  "private": true,
+  "scripts": {
+    "preinstall": "pnpx only-allow pnpm"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.22"
+  },
+  "license": "MIT"
+}
