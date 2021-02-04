@@ -1,4 +1,17 @@
 {
+  "name": "@example/lib",
+  "version": "0.0.1",
+  "main": "dist/umd/index.min.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm run clear && rollup -c",
+    "clear": "rimraf dist",
+    "prepublishOnly": "build"
+  },
   "devDependencies": {
     "@material-ui/core": "^5.0.0-alpha.23",
     "@types/node": "^14.14.22",
@@ -9,21 +22,8 @@
     "rollup-plugin-typescript2": "^0.29.0",
     "vite": "^2.0.0-beta.49"
   },
-  "files": [
-    "dist"
-  ],
-  "main": "dist/umd/index.min.js",
-  "module": "dist/esm/index.js",
-  "name": "@example/lib",
   "peerDependencies": {
     "@material-ui/core": "^5.0.0-alpha.23",
     "react": "^17.0.0"
-  },
-  "scripts": {
-    "build": "pnpm run clear && rollup -c",
-    "clear": "rimraf dist",
-    "prepublishOnly": "build"
-  },
-  "types": "dist/esm/index.d.ts",
-  "version": "0.0.1"
+  }
 }
