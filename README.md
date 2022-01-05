@@ -1,3 +1,5 @@
+> # ⚠️ Since there is a [react plugin for vite](https://github.com/vitejs/vite/tree/main/packages/plugin-react) maintained officially, we don't need this guide anymore.
+
 # example-pnpm-vite-react-lib
 
 A React Library Repository Example with pnpm and vite.
